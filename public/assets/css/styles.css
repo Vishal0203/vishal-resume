@@ -1,0 +1,229 @@
+@import url(vendor/normalize.css);
+@import url(vendor/paper.min.css);
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700");
+html {
+  color: #005253;
+  font-family: Roboto, sans-serif;
+  font-size: 10px
+}
+
+body {
+  background-color: #f1f1f1
+}
+
+ul {
+  list-style: none;
+  padding: 0
+}
+
+header {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between
+}
+
+header .name {
+  font-family: Montserrat, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: .67em 0 .5em;
+  text-transform: uppercase
+}
+
+header .position {
+  color: #777;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  padding-left: 2px;
+  text-transform: uppercase
+}
+
+header .contact .details li {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end
+}
+
+header .contact .details li img {
+  height: 16px;
+  margin-left: 10px
+}
+
+header .contact .details li p {
+  margin: .5em 0
+}
+
+header .contact .details li a {
+  color: #777;
+  text-decoration: none
+}
+
+footer {
+  align-items: center;
+  display: flex;
+  height: 8vh;
+  margin-top: 10px
+}
+
+footer>div {
+  flex: 1;
+  text-align: center
+}
+
+.section-heading {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6em;
+  letter-spacing: 1px;
+  margin: 2.5em 0 1.2em;
+  position: relative;
+  text-transform: uppercase
+}
+
+.section-heading:after {
+  background-color: #005253;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 40px
+}
+
+.sub-heading {
+  font-weight: 600;
+  letter-spacing: .2px;
+  text-transform: uppercase
+}
+
+.sub-heading a {
+  color: inherit;
+  text-decoration: none
+}
+
+.divider {
+  border-bottom: 1px solid hsla(0, 0%, 46.7%, .15);
+  padding-bottom: 2.5em
+}
+
+.content {
+  color: #777;
+  font-size: 1.2em;
+  letter-spacing: .2px;
+  line-height: 1.5;
+  margin: .8em 0
+}
+
+.date {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  margin: 0
+}
+
+.row {
+  display: flex
+}
+
+.row>div:first-child {
+  flex: 1.2
+}
+
+.row>div:last-child {
+  flex: 2
+}
+
+.right-pane section {
+  border-left: 1.2px solid rgba(0, 82, 83, .2);
+  margin-left: 5px;
+  padding-bottom: 5mm;
+  padding-left: 8mm;
+  position: relative
+}
+
+.right-pane section:before {
+  background-color: #005253;
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 10px;
+  left: -5.41px;
+  position: absolute;
+  top: 4px;
+  width: 10px
+}
+
+.education-details {
+  margin-top: 4em
+}
+
+.education-details li p {
+  color: #777;
+  font-size: 1.2em;
+  font-style: italic;
+  letter-spacing: .2px;
+  line-height: 1.5;
+  margin: .2em 0
+}
+
+.education-details li p a {
+  border-bottom: 1px dotted #777;
+  color: inherit;
+  text-decoration: none
+}
+
+.education-details li .field {
+  color: #005253;
+  margin: 0
+}
+
+.projects .education-details .sub-heading {
+  font-weight: 400;
+  text-transform: none
+}
+
+.experience .position:after {
+  color: #777;
+  content: attr(data-company);
+  display: block;
+  font-size: .9125em;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: .2px;
+  margin-top: .5em;
+  text-transform: capitalize
+}
+
+.skills-list {
+  margin-top: 3em;
+  padding-right: 4em
+}
+
+.skills-list li {
+  align-items: center;
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between
+}
+
+.skills-list li p {
+  color: #777;
+  font-size: 1em;
+  line-height: normal;
+  margin: .8em 0
+}
+
+.skills-list li progress[value] {
+  -webkit-appearance: none;
+  height: 4px
+}
+
+.skills-list li progress[value]::-webkit-progress-bar {
+  background-color: hsla(0, 0%, 46.7%, .15);
+  border-radius: 2px
+}
+
+.skills-list li progress[value]::-webkit-progress-value {
+  background-color: #005253;
+  border-radius: 2px
+}

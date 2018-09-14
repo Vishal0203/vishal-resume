@@ -1,0 +1,161 @@
+.section-heading {
+  font-size: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 2.5em 0 1.2em;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: $primary-color;
+  }
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: .2px;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.divider {
+  padding-bottom: 2.5em;
+  border-bottom: 1px solid transparentize($accent-color, .85);
+}
+
+.content {
+  font-size: 1.2em;
+  line-height: 1.5;
+  letter-spacing: .2px;
+  color: $accent-color;
+  margin: .8em 0;
+}
+
+.date {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+
+  > div:first-child {
+    flex: 1.2;
+  }
+
+  > div:last-child {
+    flex: 2;
+  }
+}
+
+.right-pane section {
+  border-left: 1.2px solid transparentize($primary-color, .8);
+  padding-left: 8mm;
+  position: relative;
+  margin-left: 5px;
+  padding-bottom: 5mm;
+
+  &::before {
+    background-color: $primary-color;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    left: -5.41px;
+    top: 4px;
+  }
+}
+
+.education-details {
+  margin-top: 4em;
+
+  li {
+    p {
+      font-style: italic;
+      color: $accent-color;
+      font-size: 1.2em;
+      margin: .2em 0;
+      letter-spacing: .2px;
+      line-height: 1.5;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        border-bottom: 1px dotted $accent-color;
+      }
+    }
+
+    .field {
+      margin: 0;
+      color: $primary-color;
+    }
+  }
+}
+
+.projects {
+  .education-details .sub-heading {
+    text-transform: initial;
+    font-weight: 400;
+  }
+}
+
+.experience {
+  .position:after {
+    content: attr(data-company);
+    display: block;
+    font-size: .9125em;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-top: .5em;
+    letter-spacing: .2px;
+    color: $accent-color;
+  }
+}
+
+.skills-list {
+  margin-top: 3em;
+  padding-right: 4em;
+
+  li {
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      font-size: 1em;
+      margin: .8em 0;
+      line-height: normal;
+      color: $accent-color;
+    }
+
+    progress[value] {
+      height: 4px;
+      -webkit-appearance: none;
+
+      &::-webkit-progress-bar {
+        background-color: transparentize($accent-color, .85);
+        border-radius: 2px;
+      }
+
+      &::-webkit-progress-value {
+        background-color: $primary-color;
+        border-radius: 2px;
+      }
+    }
+  }
+}

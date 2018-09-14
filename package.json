@@ -1,0 +1,22 @@
+{
+  "name": "vishal-resume",
+  "version": "1.0.0",
+  "description": "my resume",
+  "main": "index.js",
+  "author": "Vishal Sharma <vish.sharma0203@gmail.com> (https://www.linkedin.com/in/vishal-sharma-9072b65b/)",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp",
+    "gulp:scss": "gulp scss"
+  },
+  "dependencies": {
+    "browser-sync": "2.24.6",
+    "gulp": "3.9.1",
+    "gulp-jsbeautifier": "2.1.2",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.0.1"
+  },
+  "devDependencies": {
+    "cssnano": "4.0.5"
+  }
+}

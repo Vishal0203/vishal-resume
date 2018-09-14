@@ -1,0 +1,23 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Roboto:400,500,700');
+
+// all modules
+@import 'modules/all';
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: $primary-color;
+}
+
+body {
+  background-color: $background;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+// all partials
+@import 'partials/base';

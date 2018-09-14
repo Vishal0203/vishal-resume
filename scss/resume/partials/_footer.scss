@@ -1,0 +1,11 @@
+footer {
+  height: 8vh;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+
+  > div {
+    flex: 1;
+    text-align: center;
+  }
+}

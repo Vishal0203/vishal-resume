@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: .67em 0 .5em;
+    text-transform: uppercase;
+  }
+
+  .position {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    color: $accent-color;
+    padding-left: 2px;
+    text-transform: uppercase;
+  }
+
+  .contact {
+    .details {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        img {
+          height: 16px;
+          margin-left: 10px;
+        }
+
+        p {
+          margin: .5em 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: $accent-color;
+        }
+      }
+    }
+  }
+}
