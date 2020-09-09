@@ -182,6 +182,10 @@ footer>div {
   text-transform: none
 }
 
+.experience .sub-heading {
+  text-transform: unset
+}
+
 .experience .position:after {
   color: #777;
   content: attr(data-company);

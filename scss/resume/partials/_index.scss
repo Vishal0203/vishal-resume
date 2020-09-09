@@ -113,6 +113,10 @@
 }
 
 .experience {
+  .sub-heading {
+    text-transform: unset;
+  }
+
   .position:after {
     content: attr(data-company);
     display: block;
