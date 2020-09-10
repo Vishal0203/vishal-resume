@@ -1,9 +1,13 @@
+.mt-2em {
+  margin-top: 2em;
+}
+
 .section-heading {
   font-size: 1.6em;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin: 2.5em 0 1.2em;
+  margin: 1.5em 0 1.2em;
   position: relative;
 
   &::after {
@@ -29,7 +33,7 @@
 }
 
 .divider {
-  padding-bottom: 2.5em;
+  /* padding-bottom: 2.5em; */
   border-bottom: 1px solid transparentize($accent-color, .85);
 }
 
@@ -51,7 +55,7 @@
   display: flex;
 
   > div:first-child {
-    flex: 1.2;
+    flex: 1;
   }
 
   > div:last-child {
@@ -80,7 +84,7 @@
 }
 
 .education-details {
-  margin-top: 4em;
+  margin-top: 3.4em;
 
   li {
     p {
@@ -115,6 +119,7 @@
 .experience {
   .sub-heading {
     text-transform: unset;
+    font-size: 1.4em;
   }
 
   .position:after {
@@ -127,6 +132,15 @@
     margin-top: .5em;
     letter-spacing: .2px;
     color: $accent-color;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.6rem;
+
+    li {
+      padding-bottom: .5rem;
+    }
   }
 }
 
