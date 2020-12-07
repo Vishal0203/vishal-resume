@@ -218,7 +218,6 @@ footer>div {
 
 .skills-list li {
   align-items: center;
-  display: flex;
   font-size: 1.2em;
   justify-content: space-between
 }

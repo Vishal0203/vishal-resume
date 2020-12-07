@@ -8,7 +8,8 @@ const prettify = require('gulp-jsbeautifier');
 gulp.task('serve', ['scss'], function () {
   browserSync.init({
     server: './public',
-    browser: 'google chrome'
+    browser: 'google chrome',
+    notify: false
   });
 
   gulp.watch('scss/vendor/*.css', ['css']);
