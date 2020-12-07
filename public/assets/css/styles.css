@@ -96,6 +96,7 @@ footer>div {
 }
 
 .sub-heading {
+  font-size: 1.4em;
   font-weight: 600;
   letter-spacing: .2px;
   text-transform: uppercase
@@ -157,7 +158,7 @@ footer>div {
 }
 
 .education-details {
-  margin-top: 3.4em
+  margin-top: 3.2em
 }
 
 .education-details li p {
@@ -186,7 +187,6 @@ footer>div {
 }
 
 .experience .sub-heading {
-  font-size: 1.4em;
   text-transform: unset
 }
 
@@ -213,7 +213,7 @@ footer>div {
 
 .skills-list {
   margin-top: 3em;
-  padding-right: 4em
+  padding-right: 2em
 }
 
 .skills-list li {

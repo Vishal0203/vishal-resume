@@ -25,6 +25,7 @@
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .2px;
+  font-size: 1.4em;
 
   a {
     text-decoration: none;
@@ -84,7 +85,7 @@
 }
 
 .education-details {
-  margin-top: 3.4em;
+  margin-top: 3.2em;
 
   li {
     p {
@@ -119,7 +120,6 @@
 .experience {
   .sub-heading {
     text-transform: unset;
-    font-size: 1.4em;
   }
 
   .position:after {
@@ -146,7 +146,7 @@
 
 .skills-list {
   margin-top: 3em;
-  padding-right: 4em;
+  padding-right: 2em;
 
   li {
     font-size: 1.2em;
